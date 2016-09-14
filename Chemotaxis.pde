@@ -9,5 +9,16 @@
  }  
  class Bacteria    
  {     
- 	//lots of java!   
+ 	int x,y,fill;
+ 	Bacteria () {
+ 		x = x;
+ 		y = y;
+ 		fill = (0,0,((int)(Math.random()*255));
+ 	}   
+ 	void move() {
+
+ 	}
+ 	void show() {
+ 		
+ 	}
  }    
