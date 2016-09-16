@@ -4,6 +4,7 @@
  void setup()   
  {     
  	//initialize bacteria variables here  
+ 	size(400,400);
  	dot = new Bacteria();
  }   
  void draw()   
@@ -15,16 +16,18 @@
  }  
  class Bacteria    
  {     
- 	int x,y,fill;
+ 	int x,y,fills;
  	Bacteria () {
- 		x = x;
- 		y = y;
- 		fill = (0,0,((int)(Math.random()*255));
+ 		x = 50;
+ 		y = 350;
+ 		fills = ((int)(Math.random()*255));
  	}   
  	void move() {
- 		
+ 		x = x + (int)(Math.random()*5);
+ 		y = y + (int)(Math.random()*5)-3;
  	}
  	void show() {
- 		
+ 		fill(fills);
+ 		ellipse(x,y,10,10);	
  	}
  }    
