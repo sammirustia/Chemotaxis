@@ -20,11 +20,11 @@
  	Bacteria () {
  		x = 50;
  		y = 350;
- 		fills = ((int)(Math.random()*255));
+ 		fills = color((int)(Math.random()*255),(int)(Math.random()*255), (int)(Math.Random()*255);
  	}   
  	void move() {
- 		x = x + (int)(Math.random()*5);
- 		y = y + (int)(Math.random()*5)-3;
+ 		x = x + ((int)(Math.random()*5));
+ 		y = y + ((int)(Math.random()*5)-3);
  	}
  	void show() {
  		fill(fills);
