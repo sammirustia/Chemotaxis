@@ -17,7 +17,7 @@
  void draw()   
  {    
  	//move and show the bacteria   
- 	background(255);
+ 	background(191,228,224);
  	dot.move();
  	dot.show();
  	for(int i=0;i<colony.length;i++)
@@ -26,8 +26,11 @@
  		colony[i].show();
  	}
 
- 	person();	
+ 	person();
+
  }  
+
+
 
  void person() 
  {
@@ -36,6 +39,7 @@
  	line(35,340,35,400);
  	line(35,360,48,340);
  }
+
  class Bacteria    
  {     
  	int x,y,fills;
@@ -54,12 +58,16 @@
  		{
  			x = x + ((int)(Math.random()*5));
  			y = y + ((int)(Math.random()*7)-5);
- 		}
- 		
+ 		}		
+ 		if(x > 500 && y < -100)
+		{
+ 			
+		}
  	}
  	void show() {
  		fill(fills);
  		ellipse(x,y,13,15);
- 		line(x,y+8,x,y+20);	
+ 		triangle(x,y + 7, x - 3, y + 10, x + 3, y + 10);
+ 		line(x,y+8,x,y+28);	
  	}
- }    
+ }  
