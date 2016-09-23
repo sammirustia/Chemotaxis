@@ -27,7 +27,6 @@
  	}
 
  	person();
-
  }  
 
 
@@ -58,11 +57,7 @@
  		{
  			x = x + ((int)(Math.random()*5));
  			y = y + ((int)(Math.random()*7)-5);
- 		}		
- 		if(x > 500 && y < -100)
-		{
- 			
-		}
+ 		}	
  	}
  	void show() {
  		fill(fills);
